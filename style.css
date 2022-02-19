@@ -1,7 +1,13 @@
+.home-section {
+    margin-left: 214px;
+    margin-right: 214px;
+}
+
+
 #navigation-header {
     border-bottom: 2px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 #main-logo {
@@ -10,6 +16,59 @@
     font-weight: bold;
     line-height: 32px;
     width: 116px;
+    
+}
+
+#logo {
+    margin-right: 365px;
+    display: inline-block
+}
+
+
+.nav-buttons {
+    width: 460px;
+    height: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.try-btn-box {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-top: .5em;
+    margin-left: 44px;
+    
+}
+
+.try-button {
+    display: flex;
+    flex-basis: content;
+    background-color: #2500f9;
+    border: none;
+      display:block;
+    height: 57px;
+    width: 170px;
+    border-radius: 999px
+
+}
+
+.try-btn-text {
+    color: white;
+    /* height: 18px; */
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.blue-text {
+    color: #2500f9;
 }
 
 #orange-text {
