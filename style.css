@@ -1,0 +1,17 @@
+#navigation-header {
+    border-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-logo {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 32px;
+    width: 116px;
+}
+
+#orange-text {
+    color: orange;
+}
