@@ -14,7 +14,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: bold;
-    line-height: 32px;
+    font-size: 30px;
+    /* line-height: 32px; */
     width: 116px;
     
 }
