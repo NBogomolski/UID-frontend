@@ -4,8 +4,8 @@
 }
 
 .home-section {
-    margin-left: 214px;
-    margin-right: 214px;
+    margin-left: 215px;
+    /* margin-right: 214px; */
 }
 
 
@@ -26,7 +26,7 @@
     font-size: 30px;
     /* line-height: 32px; */
     width: 116px;
-    
+    margin-top: 130px; /*default = 14px*/
 }
 
 #logo {
@@ -49,7 +49,7 @@
     
 }
 
-p.blue-text {
+p.black-text {
     margin-top: 100px;
 }
 
@@ -80,7 +80,7 @@ p.blue-text {
     display:block;
     height: 57px;
     width: 170px;
-    margin-right: 214px;
+    margin-right: 215px;
     
     border-radius: 999px
     
@@ -98,8 +98,8 @@ p.blue-text {
     margin-right: 56px;
 } */
 
-.blue-text {
-    color: #2500f9;
+.black-text {
+    color: black;
     white-space: nowrap;
 }
 
