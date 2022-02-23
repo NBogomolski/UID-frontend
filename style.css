@@ -4,7 +4,7 @@
 }
 
 .home-section {
-    margin-left: 215px;
+    margin-left: 250px;
     /* margin-right: 214px; */
 }
 
@@ -106,3 +106,15 @@ p.black-text {
 #orange-text {
     color: orange;
 }
+
+.acheivements {
+    margin-left: 30px; /*285-215*/
+}
+
+.editors-choice {
+    background-color: #e2eaed;
+}
+
+/* .checkmark {
+    
+} */
