@@ -1,3 +1,8 @@
+* {
+  margin-top: 0;
+  padding: 0;
+}
+
 .home-section {
     margin-left: 214px;
     margin-right: 214px;
@@ -25,7 +30,7 @@
 }
 
 #logo {
-    margin-right: 365px;
+    margin-right: 327px;
     /* display: inline-block */
 }
 
@@ -44,8 +49,14 @@
     
 }
 
+p.blue-text {
+    margin-top: 100px;
+}
+
 .nav-button {
-    margin-right: 37px;
+    margin-right: 36px;
+    
+    /* padding: 0; */
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -56,8 +67,8 @@
     height: auto;
     width: auto;
     text-align: center;
-    margin-top: .5em;
-    margin-left: 44px;
+    margin-top: 92px;
+    margin-left: 56px;
     
 }
 
@@ -70,6 +81,7 @@
     height: 57px;
     width: 170px;
     margin-right: 214px;
+    
     border-radius: 999px
     
 }
@@ -81,6 +93,10 @@
     font-size: 17px;
     font-weight: bold;
 }
+/* 
+.last-el {
+    margin-right: 56px;
+} */
 
 .blue-text {
     color: #2500f9;
