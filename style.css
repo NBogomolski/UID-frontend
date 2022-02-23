@@ -8,7 +8,9 @@
     border-bottom: 2px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;  
+    margin-right: 214px;
+    /* position: fixed;   */
     /* justify-content: space-between; */
 }
 
@@ -64,11 +66,12 @@
     flex-basis: content; */
     background-color: #2500f9;
     border: none;
-      display:block;
+    display:block;
     height: 57px;
     width: 170px;
+    margin-right: 214px;
     border-radius: 999px
-
+    
 }
 
 .try-btn-text {
@@ -79,10 +82,9 @@
     font-weight: bold;
 }
 
-
-
 .blue-text {
     color: #2500f9;
+    white-space: nowrap;
 }
 
 #orange-text {
