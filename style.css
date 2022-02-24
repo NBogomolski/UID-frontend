@@ -113,12 +113,30 @@ p.black-text {
 }
 
 .editors-choice {
+    font-family: "Poppins";
     background-color: #e2eaed;
     width: 363px;
     height: 36px;
     display: flex;
     border-radius: 999px;
 }
+
+.editors-choice-text {
+    margin-top: .3em;
+}
+
+.centered {
+    transform: translate(50%,);
+    align-items: center;
+    justify-content: center;
+}
+
+.best-app-for-lifestyle {
+    font-family: "Poppins";
+    font-style: bold;
+}
+
+
 
 /* .checkmark {
     
