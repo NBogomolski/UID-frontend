@@ -121,19 +121,25 @@ p.black-text {
     border-radius: 999px;
 }
 
-.editors-choice-text {
+/* .editors-choice-text {
     margin-top: .3em;
-}
+} */
 
 .centered {
     transform: translate(50%,);
     align-items: center;
     justify-content: center;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .best-app-for-lifestyle {
     font-family: "Poppins";
     font-style: bold;
+}
+
+.img-phone {
+    
 }
 
 
