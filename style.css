@@ -110,6 +110,7 @@ p.black-text {
 .acheivements {
     margin-left: 30px; /*285-215*/
     margin-top: 230px;
+    background-image:url("phone1.png");
 }
 
 .editors-choice {
@@ -138,12 +139,34 @@ p.black-text {
     font-style: bold;
 }
 
+.editors-choice-text {
+    display: flex;
+    align-items: center;
+}
+
+.editors-choice-text p{
+    margin: 0 10px;
+    color: #242f51;
+    font-weight: 500;
+}
+
 .img-phone {
     
 }
 
+.checkmark {
+    background-color: orange;
+    border-radius: inherit;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
+.checkmark > svg {
+    color: #ffff;
+}
 /* .checkmark {
     
 } */
