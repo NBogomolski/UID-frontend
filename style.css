@@ -3,20 +3,28 @@
   padding: 0;
 }
 
-.home-section {
-    margin-left: 250px;
-    /* margin-right: 214px; */
+.home-section-wrapper {
+    height: 1040px;
+    padding: 0 20px;
+    background-image: url('city.png'),  url('gray-dots.png');
+    background-position-y: bottom, center;
+    background-repeat: repeat-x, no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
+.home-section {
+    background-image: url('redbubble.png');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 #navigation-header {
     border-bottom: 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;  
-    margin-right: 214px;
-    /* position: fixed;   */
-    /* justify-content: space-between; */
 }
 
 #main-logo {
@@ -80,7 +88,7 @@ p.black-text {
     display:block;
     height: 57px;
     width: 170px;
-    margin-right: 215px;
+    /* margin-right: 215px; */
     
     border-radius: 999px
     
@@ -137,7 +145,7 @@ p.black-text {
 } */
 
 .centered {
-    transform: translate(50%,);
+    /* transform: translate(50%,); */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -165,8 +173,9 @@ p.black-text {
 }
 
 .best-app-for-lifestyle > h1 {
-    font-size: 47px;
+    font-size: 60px;
     line-height: 65px;
+    font-weight: 600;
     color: #242f51;
     margin-bottom: 0;
 }
