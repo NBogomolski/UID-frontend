@@ -161,6 +161,7 @@ p.black-text {
 .best-app-for-lifestyle > h1 {
     font-size: 47px;
     line-height: 65px;
+    color: #242f51;
 }
 
 
@@ -179,6 +180,8 @@ p.black-text {
 .checkmark > svg {
     color: #ffff;
 }
-/* .checkmark {
-    
-} */
+
+.acheivements > p {
+    font-family: 'Poppins';
+    color: #616368;
+}
