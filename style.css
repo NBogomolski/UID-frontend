@@ -109,10 +109,16 @@ p.black-text {
 
 .acheivements {
     margin-left: 30px; /*285-215*/
-    margin-top: 230px;
     height: 732px;
+}
+
+.pic-wrapper {
+    margin-top: 40px;
+    padding-top: 230px;
     background-image:url("phone1.png");
     background-repeat: no-repeat;
+    background-position-x: 660px;
+    /* background-color: #2500f9; */
 }
 
 .editors-choice {
@@ -162,6 +168,7 @@ p.black-text {
     font-size: 47px;
     line-height: 65px;
     color: #242f51;
+    margin-bottom: 0;
 }
 
 
@@ -184,4 +191,6 @@ p.black-text {
 .acheivements > p {
     font-family: 'Poppins';
     color: #616368;
+    margin-top: calc(45px - 21px);
+    margin-bottom: 40px;
 }
