@@ -242,3 +242,67 @@ p.black-text {
     margin: 0;
     font-weight: 500;
 }
+
+.trusted-by {
+    margin-top: 80px;
+    size: fit-content fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trusted-by > p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin-bottom: 32px;
+}
+
+.companies {
+    list-style: none;
+    margin-bottom: 0;
+    width: 935px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.southwest > img {
+    width: 133px;
+    height: 42px;
+}
+
+.anubis > img {
+    width: 118px;
+    height: 84px;
+}
+
+.alonzo > img {
+    width: 151px;
+    height: 58px;
+}
+
+.premium > img {
+    width: 123px;
+    height: 71px;
+}
+
+.maniac > img {
+    width: 147px;
+    height: 51;
+}
+
+.awesome-app-features {
+    padding-top: 210px;
+}
+
+.awesome-app-features h1 {
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
