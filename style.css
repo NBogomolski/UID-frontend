@@ -198,8 +198,26 @@ p.black-text {
 }
 
 .acheivements > p {
+    font-size: 18px;
+    font-weight: 500;
     font-family: 'Poppins';
     color: #616368;
     margin-top: calc(45px - 21px);
     margin-bottom: 40px;
+}
+
+.flex-row-container {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-row-container p {
+    font-family: 'Poppins';
+    color: #2500f9;
+    margin: 0;
+    font-weight: 500;
 }
