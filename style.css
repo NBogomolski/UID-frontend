@@ -3,11 +3,31 @@
   padding: 0;
 }
 
+.engaging:hover {
+    background-color: #86878b;
+    border-style: groove;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.nav-link > p:hover {
+    color:#2500f9;
+}
+
+.watch-demo > p:hover {
+    text-decoration: underline;
+}
+
 .home-section-wrapper {
     height: 1040px;
     padding: 0 20px;
     background-image: url('city.png'),  url('gray-dots.png');
     background-position-y: bottom, center;
+    background-position-x: left, -130px;
     background-repeat: repeat-x, no-repeat;
     display: flex;
     justify-content: center;
@@ -15,8 +35,9 @@
 
 .home-section {
     background-image: url('redbubble.png');
-    background-size: 110%;
-    background-position: center;
+    background-size: 135%;
+    background-position-x: -305px;
+    background-position-y: 175px;
     background-repeat: no-repeat;
 }
 
