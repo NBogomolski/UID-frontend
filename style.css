@@ -244,7 +244,7 @@ p.black-text {
 }
 
 .trusted-by {
-    margin-top: 80px;
+    margin-top: 110px;
     size: fit-content fit-content;
     display: flex;
     flex-direction: column;
@@ -254,7 +254,7 @@ p.black-text {
     font-size: 16px;
     font-weight: 500;
     font-family: 'Poppins';
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 .companies {
@@ -302,6 +302,10 @@ p.black-text {
     width: 955px;
     display: flex;
     justify-content: flex-end;
+    background-image: url(phone_features.png);
+    background-repeat: no-repeat;
+    background-position-y: 155px;
+    background-position-x: -230px;
 }
 
 .awesome-app-features {
