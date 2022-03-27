@@ -327,11 +327,15 @@ p.black-text {
     margin-bottom: 85px;
 }
 
-.fast-performance {
+.fast-performance, .prototyping, .vector-editing {
     height: 105px;
     width: 380px;
     display: flex;
     justify-content: space-between;
+}
+
+.fast-performance, .prototyping {
+    margin-bottom: 60px;
 }
 
 .circle {
@@ -345,15 +349,18 @@ p.black-text {
 
 .fast-performance .circle {
     background-color: #ffecef;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .fast-performance .text {
     width: fit-content;
 }
 
-p.heading {
+.fast-performance p {
     color: #F55767;
+}
+
+p.heading {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -369,4 +376,22 @@ div.text {
     font-size: 16px;
     line-height: 26px;
     color: #616368;
+}
+
+.prototyping p {
+    color: #2563ff;
+}
+
+.vector-editing .heading{
+    color: #40975f;
+}
+
+.prototyping .circle {
+    background-color: #f4f4ff;
+    margin-top: 15px;
+}
+
+.vector-editing .circle {
+    background-color: #f4f4ff;
+    margin-top: 10px;
 }
