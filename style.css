@@ -415,15 +415,12 @@ div.text {
 
 .smart-jackpot-wrapper {
     height: 480px;
-    width: 1025px;
+    width: 1045px;
     margin-top: 215px;
     display: grid;
     grid-template: 255px repeat(2, 1fr) / repeat(6, 1fr);
 }
 
-.smart-jackpot-wrapper > div {
-    border: 1px solid gray;
-}
 
 .automatic-payouts-logo{
     background-color: #ffecef;
@@ -433,36 +430,56 @@ div.text {
 .network-effect-logo {
     background-color: #f4f4ff;
     grid-column: 3 / span 2;
+    margin-left: 35px;
 }
 
 .bigger-rewards-method-logo {
     background-color: #e4ffee;
     grid-column: 5 / span 2;
+    margin-left: 75px;
 }
 
-.smart-jackpot-wrapper > div:nth-child(1) {
+.smart-jackpot-text{
     grid-column: 1 / span 3;    
     grid-row: 1;
 }
 
-.smart-jackpot-wrapper > div:nth-child(2) {
+.rise-of-mobile {
     grid-column: 4 / span 3;   
     grid-row: 1;
 }
 
-.smart-jackpot-wrapper > div:nth-child(3) {
+.automatic-payouts {
     grid-column: 1 / 3;
     grid-row: 3;
 }
 
-.smart-jackpot-wrapper > div:nth-child(4) {
+.network-effect {
     grid-column: 3 / 5;
+    grid-row: 3;
+    margin-left: 35px;
+}
+
+.bigger-rewards-method {
+    margin-left: 75px;
+    grid-column: 5 / -1;
     grid-row: 3;
 }
 
-.smart-jackpot-wrapper > div:nth-child(5) {
-    grid-column: 5 / -1;
-    grid-row: 3;
+[class$="-logo circle"] {
+    margin-bottom: 30px;
+}
+
+.automatic-payouts > p {
+    color: #f55767;
+}
+
+.network-effect > p {
+    color: #2563ff;
+}
+
+.bigger-rewards-method > p{
+    color: #40975f;
 }
 
 .smart-jackpot-text > .medium-heading {
