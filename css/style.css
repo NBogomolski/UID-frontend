@@ -1,0 +1,381 @@
+/*
+    reset.css : обнуляются дефолтные стили браузера
+
+    global.css : глобальные стили и стили для элементов, использующиеся в нескольких местах страницы
+
+        - Т.к стили заголовов, текстов в секциях одинаковые - созданы общие классы section__title, section__text
+
+        - Так же и с кнопкой, не нужно для каждой секции создавать класс кнопки, можно просто указать section__btn, и если нужно что-то изменить - добавляем класс-модификатор ( section__btn--modificator ) и в нем переопределяем
+*/
+
+
+/* Ultimate Features */
+
+.u-features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.u-features__desc-col {
+    width: 55%;
+}
+
+.u-features__header {
+    max-width: 400px;
+    margin-bottom: 56px;
+}
+
+.u-features__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+.u-features__card {
+    width: 278px;
+    margin-bottom: 58px;
+    padding: 0 6px;
+}
+
+.u-features__card:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+.u-features__card-logo {
+    display: flex;
+
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+
+    margin-bottom: 32px;
+}
+
+.u-features__card-logo--red {
+    background-color: #ffecef;
+}
+
+.u-features__card-logo--green {
+    background-color: #e4ffee;
+}
+
+.u-features__card-logo--yellow {
+    background-color: #fff6d3;
+}
+
+.u-features__card-logo--blue {
+    background-color: #f4f4ff;
+}
+
+.u-features__card-logo img {
+    width: 58px;
+    margin: auto;
+}
+
+.u-features__card-title {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    color: #242f51;
+    font-weight: 600;
+}
+
+.u-features__card-text {
+    line-height: 26;
+    color: #616368;
+}
+
+.u-features__images-col {
+    position: relative;
+
+    width: 45%;
+}
+
+.u-features__images-col::after {
+    content: "";
+    background: url("/images/print-bg.png") no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    z-index: -1;
+
+    width: 700px;
+    height: 800px;
+}
+
+.u-features__phone-image {
+    z-index: 2;
+
+    margin: 135px 0 0 -21px;
+}
+
+.u-features__phone-image-2 {
+    position: absolute;
+    top: 114px;
+    left: 183px;
+    z-index: 1;
+}
+
+
+/* Questions */
+
+.questions__header {
+    max-width: 650px;
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.questions__content {
+    max-width: 946px;
+    margin: 0 auto;
+}
+
+.questions__card {
+    padding: 46px 80px 74px 48px;
+
+    background-color: #f5f7fa;
+}
+
+.questions__card-title {
+    font-size: 20px;
+    color: #242f51;
+    font-weight: 600;
+
+    margin-bottom: 31px;
+}
+
+.questions__list-item {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    padding: 21px 30px 14px 48px;
+
+    background-color: #f5f7fa;
+}
+
+.questions__list-title {
+    font-size: 20px;
+    color: #242f51;
+    font-weight: 500;
+}
+
+.questions__card-list {
+    list-style: none;
+}
+
+.questions__list-btn {
+    font-size: 36px;
+    font-weight: 400;
+    color: #242f51;
+
+    border: none;
+    background: inherit;
+}
+
+
+/* Download */
+
+.download {
+    display: flex;
+}
+
+.download__left-col {
+    width: 57%;
+    padding: 0 12px;
+}
+
+.download__buttons {
+    display: flex;
+
+    margin: 44px 0 0 7px;
+}
+
+.download__btn {
+    background-color: #000;
+    padding: 7px 11px;
+    border: none;
+    border-radius: 6px;
+
+    display: flex;
+
+    opacity: 1;
+    transition: all .2s linear;
+}
+
+.download__btn:hover {
+    background-color: rgb(0 0 0 / .9)
+}
+
+.download__btn + .download__btn {
+    margin-left: 32px;
+}
+
+
+.download__btn-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.g-play__img {
+    width: 35px;
+    margin-right: 8px;
+}
+
+.g-play__text {
+    display: inline-block;
+
+    margin: 2px 57px 0 0;
+
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.g-play__title {
+    display: inline-block;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.a-store__icon {
+    color: #fff;
+    font-size: 38px;
+
+    display: block;
+    margin-left: 5px;
+    margin-right: 6px;
+}
+
+.a-store__text {
+    display: inline-block;
+
+    margin: 2px 0 0 10px;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 10px;
+    letter-spacing: 1px;
+}
+
+.a-store__title {
+    display: inline-block;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.download__right-col {
+    width: 43%;
+    position: relative;
+    z-index: 1;
+}
+
+.download__image {
+    position: absolute;
+    top: -73px;
+    right: -215px;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 116px 0 120px;
+    background-color: #09142e;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__logo {
+    margin-bottom: 39px;
+
+    font-size: 0;
+}
+
+.footer__logo-left {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fcae61;
+}
+
+.footer__logo-right {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer__nav {
+    display: flex;
+    margin: 0 auto 38px;
+}
+
+.footer__nav-link {
+    margin: 0 13px;
+    padding: 5px;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__nav-link:first-child {
+    margin-left: 0;
+}
+
+.footer__nav-link:last-child {
+    margin-right: 0;
+}
+
+.footer__nav-link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    margin: 0 auto 81px;
+}
+
+.footer__social-link {
+    display: block;
+    padding: 5px;
+    margin: 0 6px;
+
+    font-size: 30px;
+    color: #273043;
+
+    transition: all .2s linear;
+}
+
+.footer__social-link:hover {
+    color: #fff;
+    transform: rotate(-15deg);
+}
+
+.footer__copyright {
+    font-size: 14px;
+}
+
+.footer__copyright-link {
+    text-decoration: none;
+}
+
+.footer__copyright-link:hover {
+    text-decoration: underline;
+}
