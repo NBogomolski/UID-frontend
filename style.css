@@ -25,7 +25,7 @@
 .home-section-wrapper {
     height: 1040px;
     padding: 0 20px;
-    background-image: url('city.png'),  url('gray-dots.png');
+    background-image: url('img/city.png'),  url('img/gray-dots.png');
     background-position-y: bottom, center;
     background-position-x: left, -130px;
     background-repeat: repeat-x, no-repeat;
@@ -34,7 +34,7 @@
 }
 
 .home-section {
-    background-image: url('redbubble.png');
+    background-image: url('img/redbubble.png');
     background-size: 135%;
     background-position-x: -305px;
     background-position-y: 175px;
@@ -144,7 +144,7 @@ p.black-text {
 .pic-wrapper {
     margin-top: 40px;
     padding-top: 230px;
-    background-image:url("phone1.png");
+    background-image:url("img/phone1.png");
     background-repeat: no-repeat;
     background-position-x: 660px;
     /* background-color: #2500f9; */
@@ -244,7 +244,7 @@ p.black-text {
 }
 
 .trusted-by {
-    margin-top: 80px;
+    margin-top: 110px;
     size: fit-content fit-content;
     display: flex;
     flex-direction: column;
@@ -254,7 +254,7 @@ p.black-text {
     font-size: 16px;
     font-weight: 500;
     font-family: 'Poppins';
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 .companies {
@@ -299,9 +299,19 @@ p.black-text {
 }
 
 .features-section {
-    width: 955px;
+    width: 495px;
     display: flex;
     justify-content: flex-end;
+/*     background-image: url('img/phone_features.png');
+    background-repeat: no-repeat;
+    background-position-y: 155px;
+    background-position-x: -230px; */
+}
+
+.features-image > img {
+    position: relative;
+    top: 150px;
+    right: 25px;
 }
 
 .awesome-app-features {
@@ -310,7 +320,8 @@ p.black-text {
     width: fit-content;
 }
 
-.awesome-app-features h1 {
+.medium-heading {
+    color: #242f51;
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
@@ -327,11 +338,15 @@ p.black-text {
     margin-bottom: 85px;
 }
 
-.fast-performance {
+.fast-performance, .prototyping, .vector-editing {
     height: 105px;
     width: 380px;
     display: flex;
     justify-content: space-between;
+}
+
+.fast-performance, .prototyping {
+    margin-bottom: 60px;
 }
 
 .circle {
@@ -345,15 +360,18 @@ p.black-text {
 
 .fast-performance .circle {
     background-color: #ffecef;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .fast-performance .text {
     width: fit-content;
 }
 
-p.heading {
+.fast-performance p {
     color: #F55767;
+}
+
+p.heading {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -371,7 +389,124 @@ div.text {
     color: #616368;
 }
 
-/*________________________*/
+.prototyping p {
+    color: #2563ff;
+}
+
+.vector-editing .heading{
+    color: #40975f;
+}
+
+.prototyping .circle {
+    background-color: #f4f4ff;
+    margin-top: 15px;
+}
+
+.vector-editing .circle {
+    background-color: #e4ffee;
+    margin-top: 10px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.smart-jackpot-wrapper {
+    height: 480px;
+    width: 1045px;
+    margin-top: 215px;
+    display: grid;
+    grid-template: 255px repeat(2, 1fr) / repeat(6, 1fr);
+}
+
+
+.automatic-payouts-logo{
+    background-color: #ffecef;
+    grid-column: 1 / 3;
+}
+
+.network-effect-logo {
+    background-color: #f4f4ff;
+    grid-column: 3 / span 2;
+    margin-left: 35px;
+}
+
+.bigger-rewards-method-logo {
+    background-color: #e4ffee;
+    grid-column: 5 / span 2;
+    margin-left: 75px;
+}
+
+.smart-jackpot-text{
+    grid-column: 1 / span 3;    
+    grid-row: 1;
+}
+
+.rise-of-mobile {
+    grid-column: 4 / span 3;   
+    grid-row: 1;
+}
+
+.automatic-payouts {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+.network-effect {
+    grid-column: 3 / 5;
+    grid-row: 3;
+    margin-left: 35px;
+}
+
+.bigger-rewards-method {
+    margin-left: 75px;
+    grid-column: 5 / -1;
+    grid-row: 3;
+}
+
+[class$="-logo circle"] {
+    margin-bottom: 30px;
+}
+
+.automatic-payouts > p {
+    color: #f55767;
+}
+
+.network-effect > p {
+    color: #2563ff;
+}
+
+.bigger-rewards-method > p{
+    color: #40975f;
+}
+
+.smart-jackpot-text > .medium-heading {
+    font-size: 40px;
+    line-height: 50px;
+    padding-right: 78px;
+    border-right: 1px solid #b9b9b8;
+}
+
+.inner-text-advantages {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #616368;
+}
+
+.rise-of-mobile > p {
+    position: relative;
+    top: 40px;
+    left: 35px;
+}
+
+
+
+/*Anna*/
 
 h2 {
     font-size: 36px;
