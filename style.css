@@ -3,9 +3,12 @@
   padding: 0;
 }
 
+body {
+    margin: 0;
+}
+
 .engaging:hover {
-    background-color: #86878b;
-    border-style: groove;
+    background-color: #8e7aff;
     cursor: pointer;
 }
 
