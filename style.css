@@ -1,4 +1,4 @@
-@import "css/style.css";
+@import "css/styles.css";
 @import "css/global.css";
 @import "css/reset.css";
 
@@ -575,7 +575,13 @@ div.text {
 
 /*Anna*/
 
-/* .annas-stylespace h2 {
+.annas-stylespace {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+.annas-stylespace h2 {
     font-size: 36px;
     line-height: 46px;
     font-weight: 600;
@@ -600,6 +606,10 @@ div.text {
 
 .annas-stylespace .text{
     font-family: 'Poppins';
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .annas-stylespace .circle {
@@ -676,7 +686,7 @@ div.text {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin: 0 200px 0 0;
+    margin: 0;
     width: 600px;
 }
 
@@ -687,185 +697,90 @@ div.text {
     font-size: 40px;
 }
 
-.annas-stylespace .materik{
-    position: absolute;
-    top: 7005px;
+.annas-stylespace .image{
+    background-image: url(img/materik.png);
+    height: 630px;
+    width: 825px;
+    margin: 30px 0 0 0;
 }
 
-.annas-stylespace .rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  position: absolute;
-  width: 143px;
-  height: 21px;
-  left: 860px;
-  top: 7114px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 58px;
-  display: flex;
-  align-items: center;
-  color: #FFCC00;
-}
-.annas-stylespace .rating > span:hover:before,
-.annas-stylespace .rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-}
-
-.annas-stylespace .face-1{
-    position: absolute;
-    top: 7034px;
-    left: -132px;
-}
-
-.annas-stylespace .face-2{
-    position: absolute;
-    top: 7216px;
-    left: -84px;
-}
-
-.annas-stylespace .face-3{
-    position: absolute;
-    top: 6990px;
-    left: 220px;
-}
-
-.annas-stylespace .face-4{
-    position: absolute;
-    top: 7165px;
-    left: 230px;
-}
-
-.annas-stylespace .face-5{
-    position: absolute;
-    top: 7375px;
-    left: 185px;
-}
-
-.annas-stylespace .face-6{
-    position: absolute;
-    top: 7225px;
-    left: 385px;
-}
-
-.annas-stylespace .face-7{
-    position: absolute;
-    top: 7035px;
-    left: 545px;
-}
-
-.annas-stylespace .face-8{
-    position: absolute;
-    top: 7390px;
-    left: 810px;
-}
-
-.annas-stylespace .text-prod-1{
-    position: absolute;
-    width: 507px;
-    height: 101px;
-    left: 800px;
-    top: 6900px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 50px;
-    display: flex;
-    text-align: left;
-    align-items: center;
-    color: #242F51;
-}
-
-.annas-stylespace .text-prod-2{
-    position: absolute;
-    width: 504px;
-    height: 53px;
-    left: 800px;
-    top: 7020px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    display: flex;
-    text-align: left;
-    align-items: center;
-    color: #616368;
-}
-
-.annas-stylespace .text-prod-3{
-    position: absolute;
-    width: 319px;
-    height: 58px;
-    left: 800px;
-    top: 7145px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
+.annas-stylespace .stars {
     font-size: 20px;
-    line-height: 58px;
+    color: #ffcc00;
+}
+
+.annas-stylespace .content-inf {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin: 30px 0 50px 0;
+}
+
+.annas-stylespace .inf-name {
     color: #242F51;
+    margin: 0 0 25px 0;
 }
 
-.annas-stylespace .text-prod-4{
-    position: absolute;
-    width: 593px;
-    height: 130px;
-    left: 800px;
-    top: 7205px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+.annas-stylespace .person {
     display: flex;
-    text-align: left;
-    align-items: center;
-    color: #616368;
+    flex-direction: row;
 }
 
-.annas-stylespace .text-prod-5{
-    position: absolute;
-    width: 165px;
-    height: 58px;
-    left: 925px;
-    top: 7405px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 58px;
+.annas-stylespace .person-info {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin: 20px 185px 10px 30px;
+}
+
+.annas-stylespace .person-info-name {
     color: #242F51;
-}
-
-.annas-stylespace .text-prod-6{
-    position: absolute;
-    width: 176px;
-    height: 28px;
-    left: 925px;
-    top: 7450px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    color: #616368;
 }
 
-.annas-stylespace .light:hover {
-    background-color: lightskyblue;
-    border-style: groove;
-    cursor: pointer;
-} */
+.annas-stylespace .person-info-position {
+    color: #616368;
+    font-size: 18px;
+}
+
+.annas-stylespace .person-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 50px;
+    margin: 25px 0 0 0;
+}
+
+.annas-stylespace .person-button {
+    border: 2px solid #DEE1E6;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .3s;
+}
+
+.annas-stylespace .person-button-arrow {
+    color: #DEE1E6;
+    transition: all .3s;
+}
+
+.annas-stylespace .person-line {
+    height: 26px;
+    border-left: 2px solid rgba(231, 231, 231, 1);
+    width: 2px;
+    margin: 15px 8px 15px 8px;
+}
+
+.person-button:hover .person-button-arrow {
+    color: #2500F9;
+    transition: all .3s;
+}
+
+.person-button:hover {
+    background-color: rgba(239, 243, 248, 1);
+    transition: all .3s;
+}
+
+/* Bozhena */
 
 .get-awesome{
     height: 945px;

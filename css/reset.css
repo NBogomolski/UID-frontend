@@ -1,50 +1,50 @@
-*,
-*:before,
-*:after {
+.daniils-stylespace *,
+.daniils-stylespace *:before,
+.daniils-stylespace *:after {
     box-sizing: border-box;
 }
 
-ul,
-ol {
+.daniils-stylespace ul,
+.daniils-stylespace ol {
     padding: 0;
 }
 
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-ul[class],
-ol[class],
-li,
-dl,
-dd,
-blockquote {
+.daniils-stylespace ,
+.daniils-stylespace p,
+.daniils-stylespace h1,
+.daniils-stylespace h2,
+.daniils-stylespace h3,
+.daniils-stylespace h4,
+.daniils-stylespace h5,
+.daniils-stylespace ul[class],
+.daniils-stylespace ol[class],
+.daniils-stylespace li,
+.daniils-stylespace dl,
+.daniils-stylespace dd,
+.daniils-stylespace blockquote {
     margin: 0;
 }
 
-body {
+.daniils-stylespace {
     min-height: 100vh;
     line-height: 1.5;
     scroll-behavior: smooth;
 }
 
-img {
+.daniils-stylespace img {
     display: block;
 }
 
-a,
-button {
+.daniils-stylespace a,
+.daniils-stylespace button {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
 }
 
-input,
-button,
-textarea,
-select {
+.daniils-stylespace input,
+.daniils-stylespace button,
+.daniils-stylespace textarea,
+.daniils-stylespace select {
     font: inherit;
 }
