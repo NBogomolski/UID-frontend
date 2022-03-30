@@ -1,6 +1,6 @@
 /* Global styles */
 
-body {
+.daniils-stylespace body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 26px;
@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+.daniils-stylespace .container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -19,57 +19,57 @@ body {
 
 /* Section */
 
-.section {
+.daniils-stylespace .section {
     padding: 60px 0;
 }
 
-.section--u-features {
+.daniils-stylespace .section--u-features {
     padding: 180px 0 170px;
 }
 
-.section--u-features {
+.daniils-stylespace .section--u-features {
     padding: 180px 0 50px;
 }
 
-.section--question {
+.daniils-stylespace .section--question {
     padding: 180px 0 110px;
 }
 
-.section--download {
+.daniils-stylespace .section--download {
     padding: 90px 0 108px;
     border-top: 1px solid #f4f4f4;
 }
 
-.section__title {
+.daniils-stylespace .section__title {
     font-size: 36px;
     line-height: 46px;
     color: #242f51;
     font-weight: 600;
 }
 
-.section__title--lg {
+.daniils-stylespace .section__title--lg {
     font-size: 40px;
     line-height: 58px;
 }
 
-.section__title--xl {
+.daniils-stylespace .section__title--xl {
     font-size: 48px;
     line-height: 58px;
 }
 
-.section__title + p {
+.daniils-stylespace .section__title + p {
     margin-top: 16px;
 }
 
-.section__title--lg + p {
+.daniils-stylespace .section__title--lg + p {
     margin-top: 22px;
 }
 
-.section__title--xl + p {
+.daniils-stylespace .section__title--xl + p {
     margin-top: 24px;
 }
 
-.section__btn {
+.daniils-stylespace .section__btn {
     padding: 16px 58px;
 
     border: 1px solid transparent;
@@ -83,11 +83,11 @@ body {
     transition: all .2s linear;
 }
 
-.section__btn--u-features {
+.daniils-stylespace .section__btn--u-features {
     margin-left: 9px;
 }
 
-.section__btn:hover {
+.daniils-stylespace .section__btn:hover {
     border-color: #2500f9;
     background: #fff;
 

@@ -571,8 +571,301 @@ div.text {
 
 .learn-more-btn:hover {
     background-color: #8e7aff;
-    cursor: pointer;
 }
+
+/*Anna*/
+
+/* .annas-stylespace h2 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+    color: #242f51;
+    margin: 0 0 25px 0;
+}
+
+.annas-stylespace h3 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.annas-stylespace p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #616368;
+    margin: 0;
+}
+
+.annas-stylespace .text{
+    font-family: 'Poppins';
+}
+
+.annas-stylespace .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.annas-stylespace .circle-bottom-margin {
+    margin: 0 0 35px 0;
+}
+
+.annas-stylespace .text-app{
+    margin: 140px 0 0 0;
+    text-align: center;
+}
+
+.annas-stylespace .text-app-1{
+    margin: 0 0 25px 0;
+}
+
+.annas-stylespace .pink-circle {
+    background: #ffecef;
+}
+
+.annas-stylespace .blue-circle {
+    background: #EAF9FF;
+}
+
+.annas-stylespace .yellow-circle {
+    background: #FFF6D3;
+}
+
+.annas-stylespace .purple-circle {
+    background: #F4F4FF;
+}
+
+.annas-stylespace .orange-circle {
+    background: #FDEEE4;
+}
+
+.annas-stylespace .green-circle {
+    background: #e4ffee;
+}
+
+.annas-stylespace .row {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.annas-stylespace .row-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0 0;
+}
+
+.annas-stylespace .reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 140px 0 0 0;
+    width: 1600px;
+}
+
+.annas-stylespace .content {
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0 200px 0 0;
+    width: 600px;
+}
+
+.annas-stylespace .head {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 45px 0;
+    font-size: 40px;
+}
+
+.annas-stylespace .materik{
+    position: absolute;
+    top: 7005px;
+}
+
+.annas-stylespace .rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  position: absolute;
+  width: 143px;
+  height: 21px;
+  left: 860px;
+  top: 7114px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  color: #FFCC00;
+}
+.annas-stylespace .rating > span:hover:before,
+.annas-stylespace .rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.annas-stylespace .face-1{
+    position: absolute;
+    top: 7034px;
+    left: -132px;
+}
+
+.annas-stylespace .face-2{
+    position: absolute;
+    top: 7216px;
+    left: -84px;
+}
+
+.annas-stylespace .face-3{
+    position: absolute;
+    top: 6990px;
+    left: 220px;
+}
+
+.annas-stylespace .face-4{
+    position: absolute;
+    top: 7165px;
+    left: 230px;
+}
+
+.annas-stylespace .face-5{
+    position: absolute;
+    top: 7375px;
+    left: 185px;
+}
+
+.annas-stylespace .face-6{
+    position: absolute;
+    top: 7225px;
+    left: 385px;
+}
+
+.annas-stylespace .face-7{
+    position: absolute;
+    top: 7035px;
+    left: 545px;
+}
+
+.annas-stylespace .face-8{
+    position: absolute;
+    top: 7390px;
+    left: 810px;
+}
+
+.annas-stylespace .text-prod-1{
+    position: absolute;
+    width: 507px;
+    height: 101px;
+    left: 800px;
+    top: 6900px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    color: #242F51;
+}
+
+.annas-stylespace .text-prod-2{
+    position: absolute;
+    width: 504px;
+    height: 53px;
+    left: 800px;
+    top: 7020px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    color: #616368;
+}
+
+.annas-stylespace .text-prod-3{
+    position: absolute;
+    width: 319px;
+    height: 58px;
+    left: 800px;
+    top: 7145px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    color: #242F51;
+}
+
+.annas-stylespace .text-prod-4{
+    position: absolute;
+    width: 593px;
+    height: 130px;
+    left: 800px;
+    top: 7205px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    color: #616368;
+}
+
+.annas-stylespace .text-prod-5{
+    position: absolute;
+    width: 165px;
+    height: 58px;
+    left: 925px;
+    top: 7405px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    color: #242F51;
+}
+
+.annas-stylespace .text-prod-6{
+    position: absolute;
+    width: 176px;
+    height: 28px;
+    left: 925px;
+    top: 7450px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #616368;
+}
+
+.annas-stylespace .light:hover {
+    background-color: lightskyblue;
+    border-style: groove;
+    cursor: pointer;
+} */
 
 .get-awesome{
     height: 945px;
