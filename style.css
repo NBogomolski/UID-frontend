@@ -611,6 +611,7 @@ div.text {
 
 .learn-more-btn:hover {
     background-color: #8e7aff;
+    cursor: pointer;
 }
 
 /*Anna*/
