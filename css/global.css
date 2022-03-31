@@ -23,16 +23,15 @@
     padding: 60px 0;
 }
 
-.daniils-stylespace .section--u-features {
+/* .daniils-stylespace .section--u-features {
     padding: 180px 0 170px;
-}
-
+} */
 .daniils-stylespace .section--u-features {
-    padding: 180px 0 50px;
+    padding: 180px 0 160px;
 }
 
 .daniils-stylespace .section--question {
-    padding: 180px 0 110px;
+    padding: 160px 0 110px;
 }
 
 .daniils-stylespace .section--download {

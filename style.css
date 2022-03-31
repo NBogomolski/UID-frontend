@@ -540,6 +540,13 @@ div.text {
     top: 798px;
 }
 
+.line-before {
+    border-top: 2px solid #f4f4f4;
+}
+
+.mrgn-top-160 {
+    margin-top: 160px;
+}
 
 
 /* Bozhena */
@@ -552,10 +559,9 @@ div.text {
 
 .designed-man{
     margin-top: 120px;
-    padding-bottom: 70px;
-    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 85px;
     margin-right: 280px;
-
+    
     height: 550px;
     background-image: url(https://cdn1.savepice.ru/uploads/2022/3/27/0807d98c0d477f643719089bdf1873b8-full.png);
     display: flex;
@@ -574,7 +580,7 @@ div.text {
     font-weight: 600;
     font-size: 36px;
     word-wrap: break-word;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -660,7 +666,7 @@ div.text {
 }
 
 .annas-stylespace .text-app{
-    margin: 140px 0 0 0;
+    margin: 135px 0 0 0;
     text-align: center;
 }
 
@@ -711,7 +717,7 @@ div.text {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 140px 0 0 0;
+    margin: 147px 0 0 0;
     width: 1600px;
 }
 
