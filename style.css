@@ -56,7 +56,7 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    /* line-height: 32px; */
+    color: #242f51;
     width: 116px;
     margin-top: 95px; /*default = 14px*/
 }
@@ -305,10 +305,10 @@ p.black-text {
     width: 495px;
     display: flex;
     justify-content: flex-end;
-/*     background-image: url('img/phone_features.png');
-    background-repeat: no-repeat;
-    background-position-y: 155px;
-    background-position-x: -230px; */
+}
+
+.features-image {
+    position: relative;
 }
 
 .features-image > img {
@@ -507,6 +507,40 @@ div.text {
     top: 40px;
     left: 35px;
 }
+
+.fade-button {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    height: 50px;
+    width: 215px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #E8A683, #FF5F82, #E8A683);
+    background-size: 200%;
+    transition: .5s;
+    border: none;
+}
+
+.fade-button:hover {
+    background-position: 100%;
+    cursor: pointer;
+}
+
+.fade-button:nth-child(5) {
+    position: relative;
+    right: -740px;
+    top: 60px;
+}
+
+.fade-button:nth-child(2) {
+    position: absolute;
+    transform: rotate(-14.2deg);
+    left: 273px;
+    top: 798px;
+}
+
+
 
 /* Bozhena */
 
