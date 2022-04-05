@@ -371,11 +371,11 @@ p.black-text {
     width: fit-content;
 }
 
-.fast-performance p {
+.fast-performance h3 {
     color: #F55767;
 }
 
-p.heading {
+h3.heading {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -393,7 +393,7 @@ div.text {
     color: #616368;
 }
 
-.prototyping p {
+.prototyping h3 {
     color: #2563ff;
 }
 
@@ -474,15 +474,15 @@ div.text {
     margin-bottom: 30px;
 }
 
-.automatic-payouts > p {
+.automatic-payouts > h3 {
     color: #f55767;
 }
 
-.network-effect > p {
+.network-effect > h3 {
     color: #2563ff;
 }
 
-.bigger-rewards-method > p{
+.bigger-rewards-method > h3{
     color: #40975f;
 }
 
