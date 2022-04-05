@@ -21,7 +21,7 @@ body {
     color: inherit;
 }
 
-.nav-link > p:hover {
+.nav-link:hover {
     color:#2500f9;
 }
 
@@ -55,7 +55,7 @@ body {
     flex-wrap: nowrap;
 }
 
-#main-logo {
+#logo {
     font-family: "Poppins";
     font-style: normal;
     font-weight: bold;
@@ -63,9 +63,6 @@ body {
     color: #242f51;
     width: 116px;
     margin-top: 95px; /*default = 14px*/
-}
-
-#logo {
     margin-right: 327px;
     /* display: inline-block */
 }
@@ -86,12 +83,11 @@ body {
 }
 
 p.black-text {
-    margin-top: 100px;
 }
 
 .nav-button {
     margin-right: 36px;
-
+    
     /* padding: 0; */
     display: flex;
     flex-wrap: nowrap;
@@ -105,11 +101,11 @@ p.black-text {
     text-align: center;
     margin-top: 92px;
     margin-left: 56px;
-
+    
 }
 
 .try-button {
-/*     display: flex;
+    /*     display: flex;
     flex-basis: content; */
     background-color: #2500f9;
     border: none;
@@ -117,7 +113,7 @@ p.black-text {
     height: 57px;
     width: 170px;
     /* margin-right: 215px; */
-
+    
     border-radius: 999px
 
 }
@@ -135,6 +131,7 @@ p.black-text {
 } */
 
 .black-text {
+    margin-top: 100px;
     color: black;
     white-space: nowrap;
 }
@@ -181,8 +178,7 @@ p.black-text {
 }
 
 .best-app-for-lifestyle {
-    font-family: "Poppins";
-    font-style: bold;
+
 }
 
 .editors-choice-text {
@@ -200,12 +196,14 @@ p.black-text {
     font-weight: 500;
 }
 
-.best-app-for-lifestyle > h1 {
+.best-app-for-lifestyle{
     font-size: 60px;
     line-height: 65px;
     font-weight: 600;
     color: #242f51;
     margin-bottom: 0;
+    font-family: "Poppins";
+    font-style: bold;
 }
 
 
@@ -626,6 +624,17 @@ div.text {
     justify-content: center;
 }
 
+.annas-stylespace .mrgn-btm-45 {
+    margin-bottom: 45px;
+}
+
+.annas-stylespace .user-friendly {
+    color: #242F51;
+}
+.annas-stylespace .user-friendly + p {
+    margin-bottom: 25px;
+}
+
 .annas-stylespace h2 {
     font-size: 36px;
     line-height: 46px;
@@ -779,6 +788,7 @@ div.text {
 .annas-stylespace .person-info-name {
     color: #242F51;
     font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .annas-stylespace .person-info-position {
