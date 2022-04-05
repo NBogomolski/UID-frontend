@@ -82,8 +82,6 @@ body {
 
 }
 
-p.black-text {
-}
 
 .nav-button {
     margin-right: 36px;
@@ -165,10 +163,6 @@ p.black-text {
     margin-bottom: 18px;
 }
 
-/* .editors-choice-text {
-    margin-top: .3em;
-} */
-
 .centered {
     /* transform: translate(50%,); */
     align-items: center;
@@ -177,9 +171,6 @@ p.black-text {
     vertical-align: middle;
 }
 
-.best-app-for-lifestyle {
-
-}
 
 .editors-choice-text {
     display: flex;
