@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+.preformatted {
+    white-space: pre-line;
+}
+
 .engaging:hover {
     background-color: #8e7aff;
     cursor: pointer;
