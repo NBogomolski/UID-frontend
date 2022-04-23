@@ -29,6 +29,8 @@
             integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau"
             crossorigin="anonymous"
         ></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="css-task2/dynamic-styles.css">
     </head>
     <body>
         <div class="home-section-wrapper">
@@ -89,12 +91,22 @@
                             managing your personal budgets.
                         </p>
                         <div class="flex-row-container">
-                            <button class="try-button engaging">
+                            <button class="try-button engaging" id="vid">
                                 <span class="try-btn-text">Try for free</span>
                             </button>
-                            <a href="" class="link watch-demo">
-                                <p>Watch demo video</p>
+                            <a onclick="popup()" class="link watch-demo" id="vid">
+                                Watch demo video
                             </a>
+                            <!-- embedding video -->
+                            <div id="popup">
+                                <div>
+                                    <iframe width="560" height="315" src="" title="YouTube video player"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <i class="fa-regular fa-rectangle-xmark white-ico" onclick="exitPopup()"></i>
+                                </div>
+                            </div>
+                            <!-- end of embed -->
                         </div>
                         <button class="fade-button">
                             Continue

@@ -25,8 +25,9 @@ body {
     color:#2500f9;
 }
 
-.watch-demo > p:hover {
+.watch-demo:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .home-section-wrapper {
@@ -232,7 +233,8 @@ body {
     justify-content: space-between;
 }
 
-.flex-row-container p {
+.flex-row-container a {
+    display: block;
     font-family: 'Poppins';
     color: #2500f9;
     margin: 0;
