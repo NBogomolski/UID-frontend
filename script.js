@@ -246,10 +246,6 @@ changeReview(getReviewPos());
 
 function changeReview(pos) {
     document.cookie = "reviewPos=" + pos;
-/*     const buttonsWrapper = document.querySelector(".person-buttons");
-    if (pos != 0) buttonsWrapper.classList.add("small-left-margin");
-    else if (buttonsWrapper.classList.contains("small-left-margin"))
-        buttonsWrapper.classList.remove("small-left-margin"); */
     let review = reviews[pos];
     document.getElementById("slider-title").innerText = review.title;
     document.getElementById("slider-picture").src = review.picture_src;
@@ -267,61 +263,31 @@ function changeReview(pos) {
 
 //Danik:
 
-/* document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-        myStorage = window.localStorage;
-        let dataFrSt = myStorage.getItem("active-tab");
+const blocks = document.querySelectorAll(".questions__list-item");
 
-        const buttons = document.querySelectorAll(".questions__list-item");
-        const texts = document.querySelectorAll(".question__list-content");
-        const icons = document.querySelectorAll(".questions__list-btn");
+blocks.forEach(function (item) {
+    item.addEventListener("click", blockClick);
+});
 
-        buttons.forEach((button) => {
-            const currButton = button.getAttribute("data-attr");
-            if (dataFrSt === currButton) {
-                texts.forEach((text) => {
-                    const currText = text.getAttribute("data-attr");
-                    text.classList.remove("active");
-                    if (currText === currButton) {
-                        text.classList.add("active");
-                        myStorage.setItem("active-tab", currText);
-                    }
-                });
+let openIndex = getCookie("openIndex");
+let firstElement = blocks[openIndex ?? 0];
+let preventActiveElement;
 
-                icons.forEach((icon) => {
-                    const currIcon = icon.getAttribute("data-attr");
-                    icon.classList.remove("hidden");
-                    if (currIcon === currButton) {
-                        icon.classList.add("hidden");
-                    }
-                });
+firstElement.click();
+
+function blockClick() {
+    if (this.classList.contains("hidden")) {
+        this.classList.toggle("hidden");
+        preventActiveElement?.classList.toggle("hidden");
+        preventActiveElement = this;
+
+        let index;
+        blocks.forEach((item, num) => {
+            if (item === this) {
+                index = num;
             }
         });
 
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const currButton = button.getAttribute("data-attr");
-
-                texts.forEach((text) => {
-                    const currText = text.getAttribute("data-attr");
-                    text.classList.remove("active");
-                    if (currText === currButton) {
-                        text.classList.add("active");
-                        myStorage.setItem("active-tab", currText);
-                    }
-                });
-
-                icons.forEach((icon) => {
-                    const currIcon = icon.getAttribute("data-attr");
-                    icon.classList.remove("hidden");
-                    if (currIcon === currButton) {
-                        icon.classList.add("hidden");
-                    }
-                });
-            });
-        });
-    },
-    false
-);
- */
+        document.cookie = "openIndex=" + index;
+    }
+}
