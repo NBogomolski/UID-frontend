@@ -3,16 +3,18 @@ function popup() {
     wrapper.classList.add("black-popup");
     wrapper.onclick = exitPopup;
     wrapper
-        .querySelector("iframe")
+        .querySelector("#popup iframe")
         .setAttribute(
             "src",
-            "https://www.youtube.com/embed/djV11Xbc914?start=33"
+            "https://www.youtube.com/embed/DzdbAD-3a9c?start=59;&autoplay=1"
         );
 }
 
 function exitPopup() {
     let wrapper = document.getElementById("popup");
     wrapper.classList.remove("black-popup");
+    let embeddedPlayer = document.querySelector("#popup iframe");
+    embeddedPlayer.setAttribute("src", "");
 }
 
 //Bozhena
@@ -60,8 +62,8 @@ function createModalForm() {
 
     let closeButton = document.createElement("img");
     // closeButton.classList.add("fa", "fa-times", "fa-2x", "modal-close-btn");
-    closeButton.setAttribute('src', 'img/krestik.jpg');
-    closeButton.classList.add('krestik', 'modal-close-btn');
+    closeButton.setAttribute("src", "img/krestik.jpg");
+    closeButton.classList.add("krestik", "modal-close-btn");
     // closeButton.style.zIndex = -1;
     closeButton.addEventListener("click", closeModalForm);
 
@@ -112,6 +114,7 @@ function createModalForm() {
             type = "submit";
             id = "submit_form_button";
             name = "Apply";
+            value = "Send";
             classList.add("try-button", "modal-btn");
             disabled = true;
             addEventListener("click", submitModalForm);
@@ -133,7 +136,7 @@ function createModalForm() {
 
         form.append(isRegisteredMessage);
         if (timeoutID) clearTimeout(timeoutID);
-        // timeoutID = setTimeout(closeModalForm, 5000);
+        timeoutID = setTimeout(closeModalForm, 5000);
     }
 }
 
@@ -159,7 +162,6 @@ function validateForm() {
         email &&
         telephone
     );
-
 }
 
 function submitModalForm() {
@@ -168,7 +170,7 @@ function submitModalForm() {
     success.textContent = "Form was submitted successfully";
     let form = document.querySelector(".form");
     form.append(success);
-    document.getElementById('submit_form_button').disabled = true;
+    document.getElementById("submit_form_button").disabled = true;
     document.cookie = "isRegistered=yes";
     if (timeoutID) clearTimeout(timeoutID);
     timeoutID = setTimeout(closeModalForm, 5000);
@@ -186,6 +188,140 @@ function getCookie(name) {
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
-document.querySelector(".modal-form svg").addEventListener("click", () => {
+document.querySelector(".modal-form svg")?.addEventListener("click", () => {
     removeModalForm();
 });
+
+// Anna:
+
+const reviews = [
+    {
+        name: "Zoltan Nemeth",
+        position: "CEO of Pixler Lab",
+        title: "User friendly & Customizable",
+        picture_src: "img/face.png",
+        text: `Bring to the table win-win survival strategies to ensure proactive domi-
+                nation. At the end of the day, going forward, a new normal that has
+                evolved from generation X is on the runway heading towards a
+                streamlined cloud solution. User generated content in real-time will
+                have multiple touchpoints for offshoring.`,
+        stars: 5,
+    },
+    {
+        name: "Samuel Adamson",
+        position: "System engineer",
+        title: "Bad app",
+        picture_src: "img/face-4_cut.png",
+        text: `Too many ads.`,
+        stars: 2,
+    },
+    {
+        name: "Jack Evans",
+        position: "Information systems specialist",
+        title: "Nice app",
+        picture_src: "img/face-6_cut.png",
+        text: `I used the application for two months, I liked everything, but sometimes ads interfere, which isn't always easy to cope with.`,
+        stars: 4,
+    },
+];
+
+function getReviewPos() {
+    return getCookie("reviewPos") ?? 0;
+}
+
+document.querySelector("#slider-left").addEventListener("click", function () {
+    let curPos = getReviewPos();
+    curPos--;
+    if (curPos < 0) curPos += reviews.length;
+    changeReview(curPos);
+});
+
+document.getElementById("slider-right").addEventListener("click", function () {
+    let curPos = getReviewPos();
+    curPos++;
+    if (curPos >= reviews.length) curPos -= reviews.length;
+    changeReview(curPos);
+});
+changeReview(getReviewPos());
+
+function changeReview(pos) {
+    document.cookie = "reviewPos=" + pos;
+/*     const buttonsWrapper = document.querySelector(".person-buttons");
+    if (pos != 0) buttonsWrapper.classList.add("small-left-margin");
+    else if (buttonsWrapper.classList.contains("small-left-margin"))
+        buttonsWrapper.classList.remove("small-left-margin"); */
+    let review = reviews[pos];
+    document.getElementById("slider-title").innerText = review.title;
+    document.getElementById("slider-picture").src = review.picture_src;
+    document.getElementById("slider-text").innerHTML = review.text;
+    document.getElementById("slider-name").innerText = review.name;
+    document.getElementById("slider-position").innerText = review.position;
+
+    // document.getElementById("review-stars").innerHTML = "";
+    for (let i = 0; i < 5; i++) {
+        let star = document.getElementById("slider-star-" + i);
+        if (i < review.stars) star.style.display = "inline-block";
+        else star.style.display = "none";
+    }
+}
+
+//Danik:
+
+/* document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+        myStorage = window.localStorage;
+        let dataFrSt = myStorage.getItem("active-tab");
+
+        const buttons = document.querySelectorAll(".questions__list-item");
+        const texts = document.querySelectorAll(".question__list-content");
+        const icons = document.querySelectorAll(".questions__list-btn");
+
+        buttons.forEach((button) => {
+            const currButton = button.getAttribute("data-attr");
+            if (dataFrSt === currButton) {
+                texts.forEach((text) => {
+                    const currText = text.getAttribute("data-attr");
+                    text.classList.remove("active");
+                    if (currText === currButton) {
+                        text.classList.add("active");
+                        myStorage.setItem("active-tab", currText);
+                    }
+                });
+
+                icons.forEach((icon) => {
+                    const currIcon = icon.getAttribute("data-attr");
+                    icon.classList.remove("hidden");
+                    if (currIcon === currButton) {
+                        icon.classList.add("hidden");
+                    }
+                });
+            }
+        });
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const currButton = button.getAttribute("data-attr");
+
+                texts.forEach((text) => {
+                    const currText = text.getAttribute("data-attr");
+                    text.classList.remove("active");
+                    if (currText === currButton) {
+                        text.classList.add("active");
+                        myStorage.setItem("active-tab", currText);
+                    }
+                });
+
+                icons.forEach((icon) => {
+                    const currIcon = icon.getAttribute("data-attr");
+                    icon.classList.remove("hidden");
+                    if (currIcon === currButton) {
+                        icon.classList.add("hidden");
+                    }
+                });
+            });
+        });
+    },
+    false
+);
+ */

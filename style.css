@@ -558,7 +558,7 @@ div.text {
     margin-right: 280px;
     
     height: 550px;
-    background-image: url(https://cdn1.savepice.ru/uploads/2022/3/27/0807d98c0d477f643719089bdf1873b8-full.png);
+    background-image: url(img/man_bozhenas_part.jpg);
     display: flex;
     margin-left: 140px;
     background-repeat: no-repeat;
@@ -775,7 +775,8 @@ div.text {
 .annas-stylespace .person-info {
     display: flex;
     flex-direction: column;
-    margin: 20px 185px 10px 30px;
+    margin: 20px 0 10px 30px;
+    flex-basis: 200px;
 }
 
 .annas-stylespace .person-info-name {
@@ -794,7 +795,7 @@ div.text {
     flex-direction: row;
     width: 120px;
     height: 50px;
-    margin: 25px 0 0 0;
+    margin: 25px 0 0 185px;
 }
 
 .annas-stylespace .person-button {
@@ -863,7 +864,8 @@ div.text {
 .choice-btn{
     height: 60px;
     width: 290px;
-    background-image: url(https://cdn1.savepice.ru/uploads/2022/3/27/efb6dfbb9b98c24d9441511b3b2f11e3-full.png);
+    background-image: url(img/button_border.jpg);
+    background-position-y: 1px;
     background-repeat: no-repeat;
     margin-bottom: 35px;
 }
@@ -923,7 +925,7 @@ div.text {
 }
 
 .zero-month{
-    background-image: url(https://cdn1.savepice.ru/uploads/2022/3/27/24e43babbb90b8f26add908dff019fc5-full.png);
+    background-image: url(img/blank_whatever.jpg);
     box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-repeat: no-repeat;
@@ -943,7 +945,7 @@ div.text {
 
 .pro-master{
     margin-top: 0px;
-    background-image: url(https://cdn1.savepice.ru/uploads/2022/3/28/a9a31447ea4d96470a7fd55232fc3935-full.png);
+    background-image: url(img/frame_bozhena.jpg);
     background-repeat: no-repeat;
     height: 605px;
     width: 325px;   
@@ -1063,3 +1065,7 @@ div.text {
 
 
 /*Anna*/
+
+.annas-stylespace .small-left-margin {
+    margin-left: 20px;
+}

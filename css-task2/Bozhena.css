@@ -105,3 +105,7 @@
     justify-content: center;
     align-items: stretch;
 }
+
+#submit_form_button:enabled {
+    cursor: pointer;
+}
