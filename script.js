@@ -247,13 +247,11 @@ changeReview(getReviewPos());
 function changeReview(pos) {
     document.cookie = "reviewPos=" + pos;
     let review = reviews[pos];
-    document.getElementById("slider-title").innerText = review.title;
+    document.getElementById("slider-title").innerHTML = review.title;
     document.getElementById("slider-picture").src = review.picture_src;
     document.getElementById("slider-text").innerHTML = review.text;
     document.getElementById("slider-name").innerText = review.name;
     document.getElementById("slider-position").innerText = review.position;
-
-    // document.getElementById("review-stars").innerHTML = "";
     for (let i = 0; i < 5; i++) {
         let star = document.getElementById("slider-star-" + i);
         if (i < review.stars) star.style.display = "inline-block";
